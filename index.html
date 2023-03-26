@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input</title>
+    <style>
+        body{
+            text-align: center;
+            margin-top: 12rem;
+            
+        }
+        input{
+            border-color: green;
+            border-width: 2px;
+            border-radius: 0%;
+        }
+    </style>
+</head>
+<body>
+    <input oninput="fname(this)"  class="input" type="text" name="" id="" placeholder="enter name">
+    <p class="input" id="fname"></p>
+
+    <script>
+        function fname(name){
+            document.getElementById('fname').innerText=name.value
+        }
+    </script>
+</body>
+</html>
